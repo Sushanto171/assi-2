@@ -234,21 +234,12 @@ nav a{
     width: 100%;
 }
 #card-1{
-<<<<<<< HEAD
     bottom: 400px;
     right: 2%;
 }   
 #card-2{
-bottom: 100px;
+bottom: 200px;
 left: 2%;
-=======
-    bottom: 500px;
-  left: 220px;
-}   
-#card-2{
-bottom: 150px;
-left: -260px;
->>>>>>> 3719827f9a84ba6ce927a86bb2b3c973d80d15a6
 }
 .habits-images{
     grid-template-columns: repeat(1,1fr);
