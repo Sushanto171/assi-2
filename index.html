@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="inter-font ">
-    <header class="margin">
-        <nav class="display-flex">
+    <header >
+        <nav class="display-flex margin">
             <section class="fitness">
                 <h1>Fitness</hf1>
             </section>
@@ -22,7 +22,7 @@
                 <img src="./images/navicon.png" alt="">
             </section>
         </nav>
-        <section class="banner display-flex">
+        <section class="banner display-flex margin">
             <div class="banner-tittle">
                 <h2>Get body in the <span>shape</span> & stay healthy</h2>
                 <p class="primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus sunt repudiandae nulla possimus autem, totam doloremque similique sit quis?</p>
@@ -140,8 +140,8 @@
             <h3 class="tittle">BMI Calculator</h3>
             <p class="primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem temporibus possimus provident quasi dignissimos praesentium, neque ex non harum?</p>
         </section>
-        <section id="bmi">
-            <div>
+        <section id="" class="display-flex bmi -*/" >
+            <div class="margin">
                 <h4 class="bmi-tittle">BMI Calculator Chart</h4>
                 <table>
                     <tr>
@@ -167,8 +167,30 @@
                 </table>
 
             </div>
-            <div>
-
+            <div class="margin">
+                <h4 class="bmi-tittle">Calculate your BMI</h4>
+                <p class="primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, accusamus!</p>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Height/cm">
+                        <input type="text" placeholder="weight/kg">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Age">
+                        <select name="gander" id="gander">
+                            <option value="sex">Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    <select name="" id="factor">
+                        <option value="">
+                            Select an activity factor
+                        </option>
+                    </select>
+                    <button class="primary-btn">Calculate</button>
+                </form>
             </div>
         </section>
     </main>
