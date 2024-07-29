@@ -248,9 +248,9 @@ nav a{
 .bmi-0{
     margin-left: 30%
 }
-#bmi{
-
+.bmi{
     background-color: rgba(34, 34, 34, 1);
+    justify-content:space-around;
 }
 table{
     border-collapse: collapse;
@@ -272,6 +272,7 @@ table td{
     padding: 1rem;
 }
 form input{
+    width: 40%;
     padding: 5px 0 5px 5px;
     margin: 5px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -280,34 +281,31 @@ form input{
 }
 #gander {
     margin: 5px;
-    color:rgba(255, 255, 255, 0.402);;
-    padding: 5px 0;
-    padding-right: 100px;
+    color:rgba(255, 255, 255, 0.402);
+    width: 40.5% ;
+    padding: 5px 10px;
     border: 0px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);}
 #factor {
     margin: 5px;
     color:rgba(255, 255, 255, 0.402);
-    padding: 5px 0;
-    padding-right: 193px;
+    padding: 5px 10px;
+    width: 85%;
     border: 0px solid #ffffff70;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
 }
-form{
-    width: 400px;
-}
 @media screen and (max-width:576px) { 
+ .banner, #run, .bmi{
+    flex-direction: column;
+ }
     .margin{
         margin: 0 5px;
     }
     nav ul{
         display: none;
     }
-.banner, #run{
-    flex-direction: column;
-}
 #run{
     padding: 40px 0;
 }
@@ -331,9 +329,6 @@ form{
 bottom: 100px;
 left: 2%;
 }
-.habits-images{
-    grid-template-columns: repeat(1,1fr);
-}
     #btn{
         margin-top: 3rem;
     }
@@ -344,6 +339,9 @@ left: 2%;
 }
 #trainings-images{
     grid-template-columns: repeat(2,1fr);
+}
+.habits-images{
+    grid-template-columns: repeat(1,1fr);
 }
 .train-3, .train-6{
     display: none;
@@ -356,9 +354,6 @@ left: 2%;
 }
 .bmi-0{
     margin-left: 2%
-}
-.bmi{
-    flex-direction: column;
 }
 }
 @media screen and (min-width:577px) and (max-width:992px){
@@ -387,9 +382,6 @@ left: 2%;
     }
     .bmi{
         flex-direction: column;
-    }
-    form{
-        width: 100%;
     }
     }
 @media screen and (min-width:993px) and (max-width:1440px){
