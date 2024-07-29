@@ -15,6 +15,8 @@ padding: 0;
 body{
     background-color: black;
     color:#ffffff;
+}
+.margin{
     margin: 5px 40px;
 }
 .display-flex{
@@ -40,13 +42,14 @@ body{
     text-align: center;
 }
 .tittle{
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     font-size: 26px;
 }
 .primary-text{
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
     margin: 0;
+    padding: 1rem 0;
 }
 .tittle{
     font-size: 48px;
@@ -123,7 +126,7 @@ nav a{
 #card-1{
     display: inline-block;
     text-align: left;
-    padding: 10px ;
+    padding:5px 10px ;
     background-color: #ffffff16;
     border:1px solid #ffffff10;
     border-radius: 10px;
@@ -132,7 +135,7 @@ nav a{
 }
 #card-2{
     display: inline-block;
-    padding: 10px;
+    padding:5px 10px;
     border:1px solid #ffffff29;
     border-radius: 10px;
     position: absolute;
@@ -189,27 +192,83 @@ nav a{
     gap: 0;
     width: 100%;
 }
-.train-1 img{
- opacity: rgba(255, 0, 0, 0.623);
+.train-1, .train-2, .train-3, .train-4 ,.train-5, .train-6{
+    position: relative;
 }
-
-.train-2{
-
+#blank-1{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.347);
+    position: absolute;
+    top: 0;
 }
-.train-3{
-
+#blank-2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 17, 0, 0.347);
+    position: absolute;
+    top: 0;
 }
-.train-4{
-
+#blank-3{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(81, 255, 0, 0.242);
+    position: absolute;
+    top: 0;
 }
-.train-5{
-
+#blank-4{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(162, 0, 255, 0.347);
+    position: absolute;
+    top: 0;
 }
-.train-6{
+.blank-5{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.409);
+    position: absolute;
+    top: 0;
 }
-
+.train-1 h4 , .train-3 h4, .train-5 h4, .train-6 h4{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    }
+ .train-4 h4{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+ }
+.train-2 h4{
+            position: absolute;
+            top: 20px;
+            left: 10px;
+}
+.bmi-0{
+    margin-left: 30%
+}
+#bmi{
+    margin: 0;
+    background-color: #3b393971;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid red;
+    width: 90%;
+   margin: 1rem 0.5rem;
+}
+table tr, th, td{
+    border: 1px solid #ffffff4f;
+    padding: 5px 10px;
+}
+.bmi-tittle{
+    font-size: 25px;
+    text-align: center;
+    padding: 1rem;
+}
 @media screen and (max-width:576px) {
-    body{
+    .margin{
         margin: 0 5px;
     }
     nav ul{
@@ -248,7 +307,7 @@ left: 2%;
         margin-top: 3rem;
     }
 #join-btn{
-    width: 70%;
+    width: 60%;
     display: block;
    margin: 1rem auto;
 }
@@ -257,6 +316,15 @@ left: 2%;
 }
 .train-3, .train-6{
     display: none;
+}
+.bmi-0{
+    margin-left: 10%
+}
+.primary-btn{
+    width: 60%;
+}
+#down-btn{
+    width: 60%;
 }
 }
 @media screen and (min-width:577px) and (max-width:992px)
