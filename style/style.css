@@ -296,6 +296,34 @@ form input{
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
 }
+.meet-images{
+    grid-template-columns: repeat(3,1fr);
+    gap: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(235, 229, 229, 0.103);
+    border-radius: 18px;
+}
+.meet-images div{
+ padding: 0;
+ margin: 5px;
+
+}
+
+.meet-image{
+    max-width: 100%;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+}
+.meet-images div{
+    position: relative;
+}
+.over{
+    position: absolute;
+    bottom: 80px;
+    left: 2%;
+}
 @media screen and (max-width:576px) { 
  .banner, #run, .bmi{
     flex-direction: column;
@@ -303,7 +331,7 @@ form input{
     .margin{
         margin: 0 5px;
     }
-    nav ul{
+    nav ul, .hidden{ 
         display: none;
     }
 #run{
@@ -355,6 +383,9 @@ left: 2%;
 .bmi-0{
     margin-left: 2%
 }
+.meet-images{
+    grid-template-columns: repeat(1,1fr);
+}
 }
 @media screen and (min-width:577px) and (max-width:992px){
     #device-menu{
@@ -383,6 +414,9 @@ left: 2%;
     .bmi{
         flex-direction: column;
     }
+    #factor{
+        width: 83%;
+    }
     }
 @media screen and (min-width:993px) and (max-width:1440px){
     #device-menu{
@@ -395,6 +429,9 @@ left: 2%;
     #card-2{
         bottom: 100px;
         left: 5%;
+    }
+    #factor{
+        width: 86%;
     }
 }
 @media screen and (min-width:1441px){
