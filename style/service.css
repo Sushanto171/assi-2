@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+/* Shared style */
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: black;
+    color:#ffffff;
+}
+.margin{
+    margin: 5px 40px;
+}
+.display-flex{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.display-grid{
+    display: grid;
+}
+/* nav related style */
+.fitness{
+    font-weight: 900;
+    color: #E6533C;
+    font-size: 2.25rem;
+    font-style: italic;
+}
+nav ul{
+    border: 1px solid rgba(255, 255, 255, 0.648);
+   display: inline-block;
+   border-radius: 40px; 
+    line-height: 16px;
+}
+nav li{
+display: inline-block;
+padding: 5px 5px;
+margin-bottom: 0;
+padding-bottom: 0;
+margin-top: 12px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+#home_btn{
+    background-color:  #E6533C;
+    padding: 13px 20px;
+    border-radius: 46px;
+    margin-top: 20px;
+    margin-left: -2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* footer style */
+footer a{
+    text-decoration: none;
+    color: #ffffff70;
+    display: block;
+    padding: 10px;
+}
+#bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+}
+footer h3{
+    margin-top: 60px;
+}
+footer span{
+    display: block;
+    text-align: center;
+    color: #ffffff70;
+    margin: 20px 0;
+}
+@media screen and (max-width:576px) { 
+
+       nav ul{ 
+           display: none;
+       }
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    #device-menu{
+        display: none;
+    }
+}
+    @media screen and (min-width:993px) and (max-width:1440px){
+        #device-menu{
+            display: none;
+        }
+}
