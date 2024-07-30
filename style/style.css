@@ -16,7 +16,7 @@ body{
     background-color: black;
     color:#ffffff;
     z-index: -1;
-    margin-top: 65px;
+    margin-top: 66px;
 }
 body div{
     position: relative;
@@ -68,13 +68,13 @@ body div{
 }
 .tittle{
     margin: 1rem 0;
-    font-size: 26px;
 }
 .primary-text{
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
     margin: 0;
     padding: 1rem 0;
+    margin: 0 auto;
 }
 .tittle{
     font-size: 48px;
@@ -154,11 +154,13 @@ nav a{
     margin-top: 3rem;
 }
 .banner-tittle h2{
-    font-size: 4.5rem;
-    padding-top: 20px;
+    font-size: 4rem;
+    padding-top: 28px;
     text-align: left;
     font-weight: 900;
     margin-bottom: 1rem;
+    line-height:120px;
+    width: 110%;
 }
 .banner-tittle span{
 font-family: miama;
@@ -470,19 +472,15 @@ nav a:hover , footer a:hover{
     margin-top: 1rem;
 }
 .banner-tittle h2{
-    font-size: 38px;
-    width: 80%;
+    font-size: 3.5em;
+    width: 95%;
+    line-height: 70px;
 }.banner-tittle p{
     width: 80%;
 }
 .banner-tittle {
     width: 100%;
 }
-.banner-tittle span{
-    font-family: miama;
-    font-size:2em ;
-    font-weight: 100;
-    }
 #card-1{
     bottom: 380px;
     right: 2%;
@@ -533,6 +531,9 @@ left: 2%;
     margin-left: -14%;
     width: 84%;
 }
+.tittle{
+    font-size: 2em;
+}
 }
 @media screen and (min-width:577px) and (max-width:992px){
     #device-menu, #chat-box{
@@ -549,7 +550,7 @@ left: 2%;
     }
     #card-1{
         bottom: 450px;
-        right: 5%;
+        right: 3%;
     }
     #card-2{
         bottom: 150px;
@@ -584,7 +585,7 @@ left: 2%;
     }
     #card-1{
         bottom: 400px;
-        right: 2%;
+        right: -8%;
     }
     #card-2{
         bottom: 100px;
@@ -601,7 +602,7 @@ left: 2%;
 
 #card-1{
     bottom: 400px;
-    right: 2%;
+    right: -8%;
 }
 #card-2{
     bottom: 100px;
