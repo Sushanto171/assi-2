@@ -110,10 +110,13 @@ nav a{
     background-color:  #E6533C;
     padding: 13px 20px;
     border-radius: 46px;
-    margin-top: 20px;
     margin-left: -2px;
     font-size: 18px;
     font-weight: 600;
+    margin: 0;
+    margin-top: -18px;
+    border: 0;
+    color: #ffffff;
 }
 #down-btn{
     color: #ffffff;
@@ -196,6 +199,7 @@ font-weight: 100;
     border-radius: 50%;
     margin: 10px auto;
     display: block;
+    border: 5px solid #ffffff0f;
 }
 .habits-images{
     margin: 10px 0;
@@ -286,7 +290,15 @@ font-weight: 100;
     background-color: rgba(0, 0, 0, 0.409);
     position: absolute;
     top: 0;
-
+}
+.over:hover{
+    border-left: 20px solid #ffffff;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.5s;
+    background-color: #017164ef;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 #blank-1:hover, #blank-2:hover, #blank-3:hover, #blank-4:hover, 
 #blank-5:hover, #blank-6:hover{
@@ -400,6 +412,7 @@ footer a{
     color: #ffffff70;
     display: block;
     padding: 10px;
+    padding-left: 0;
 }
 #bottom{
     display: grid;
@@ -415,6 +428,14 @@ footer span{
     color: #ffffff70;
     margin: 20px 0;
 }
+nav a:hover , footer a:hover{
+    display: block;
+    padding-left: 0;
+    border-bottom: 1px solid ;
+    max-width: max-content;
+    color: #ffffff;
+}
+
 @media screen and (max-width:576px) { 
  .banner, #run, .bmi{
     flex-direction: column;
