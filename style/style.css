@@ -15,6 +15,8 @@ padding: 0;
 body{
     background-color: black;
     color:#ffffff;
+}
+body div{
     position: relative;
 }
 #chat-box{
@@ -143,7 +145,9 @@ nav a{
     margin-bottom: 1rem;
 }
 .banner-tittle span{
-
+font-family: miama;
+font-size:2.5em ;
+font-weight: 100;
 }
 .banner-tittle{
     width: 70%;
@@ -282,6 +286,7 @@ nav a{
     background-color: rgba(0, 0, 0, 0.409);
     position: absolute;
     top: 0;
+
 }
 #blank-1:hover, #blank-2:hover, #blank-3:hover, #blank-4:hover, 
 #blank-5:hover, #blank-6:hover{
@@ -295,13 +300,12 @@ nav a{
     }
  .train-4 h4{
         position: absolute;
-        top: 20px;
-        right: 10px;
+        top:-100px;
+        left: 3%;
  }
 .train-2 h4{
             position: absolute;
-            top: 20px;
-            left: 10px;
+        top: 2%;
 }
 .bmi-0{
     margin-left: 30%
@@ -513,6 +517,7 @@ left: 2%;
     }
     .bmi{
         flex-direction: column;
+
     }
     #factor{
         width: 83%;
