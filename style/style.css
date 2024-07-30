@@ -15,6 +15,19 @@ padding: 0;
 body{
     background-color: black;
     color:#ffffff;
+    position: relative;
+}
+#chat-box{
+    background-color: #017164;
+    padding: 15px;
+    border-radius: 12px 12px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    right: 3%;
+}
+#chat-box a{
+    text-decoration: none;
+    color: #ffffff;
 }
 .margin{
     margin: 5px 40px;
@@ -37,6 +50,13 @@ body{
     width: 225px;
     font-size: 1.1em;
     font-weight: 600;
+}
+.primary-btn:hover{
+    color:#E6533C;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 50px #7c757423;
+    transition: 0.5s;
+    border: 1px solid;
 }
 .align-center{
     text-align: center;
@@ -101,9 +121,17 @@ nav a{
     border-radius: 42px;
     padding: 16px 45px;
     width: 225px;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 600;
 }
+#down-btn:hover{
+    color: #444242;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 50px #7c757432;
+    transition: 0.5s;
+    border: 1px solid;
+}
+
 #btn{
     margin-top: 3rem;
 }
@@ -113,6 +141,9 @@ nav a{
     text-align: left;
     font-weight: 900;
     margin-bottom: 1rem;
+}
+.banner-tittle span{
+
 }
 .banner-tittle{
     width: 70%;
@@ -148,11 +179,12 @@ nav a{
 #circle{
     margin: auto;
     width: 30px;
-    height: 30px;
     background-color: #E6533C;
     border: 1px solid #E6533C;
     border-radius: 50%;
     text-align: center;
+    padding-top: 3px;
+    padding-left: 2px;
 }
 /* main related style */
 .habit-image{
@@ -250,6 +282,11 @@ nav a{
     background-color: rgba(0, 0, 0, 0.409);
     position: absolute;
     top: 0;
+}
+#blank-1:hover, #blank-2:hover, #blank-3:hover, #blank-4:hover, 
+#blank-5:hover, #blank-6:hover{
+    background-color:transparent;
+    transition: 0.5s;
 }
 .train-1 h4 , .train-3 h4, .train-5 h4, .train-6 h4{
     position: absolute;
@@ -381,7 +418,7 @@ footer span{
     .margin{
         margin: 0 5px;
     }
-    nav ul, .hidden{ 
+    nav ul, .hidden, #chat-box{ 
         display: none;
     }
 #run{
@@ -451,7 +488,7 @@ left: 2%;
 }
 }
 @media screen and (min-width:577px) and (max-width:992px){
-    #device-menu{
+    #device-menu, #chat-box{
         display: none;
     }
     .banner{
@@ -480,11 +517,11 @@ left: 2%;
     #factor{
         width: 83%;
     }
-    /* #first-footer{
-        grid-column:1 1fr;
-    } */
-    #bottom{
-        grid-columns: 1px;
+    #bottom div:nth-child(1){
+        grid-column: span 3;
+    }
+    #bottom {
+        justify-content: space-around;
     }
     #factor {
     margin-left: -15%;
